@@ -74,7 +74,7 @@ void main()
 	//testSeqStack();
 	//testListStack();
 	//testSeqQueue();
-	testListQueue();
+	//testListQueue();
 	system("pause");
 }
 
