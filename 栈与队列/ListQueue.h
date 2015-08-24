@@ -105,5 +105,4 @@ void ListQueue<T>::pop()
 	pFront = next;
 	nowSize--;
 }
-
 #endif
