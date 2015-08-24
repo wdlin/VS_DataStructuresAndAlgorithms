@@ -69,13 +69,14 @@ void testListQueue()
 		//cout << mQueue.size() << endl;
 	}
 }
-void main()
+int main()
 {	
 	//testSeqStack();
 	//testListStack();
 	//testSeqQueue();
 	//testListQueue();
 	system("pause");
+	return 0;
 }
 
 
