@@ -13,6 +13,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表", "LinedList\LinedLi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二叉搜索树", "二叉搜索树\二叉搜索树.vcxproj", "{A74D2D16-C657-4559-9F76-2C5A1AC27E7E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最短路径算法", "最短路径算法\最短路径算法.vcxproj", "{DE07269D-CAD0-4293-9F73-C481A5980C71}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "优先队列", "优先队列\优先队列.vcxproj", "{CD581A75-7C5F-4500-90A8-BA857F6BBC4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +43,14 @@ Global
 		{A74D2D16-C657-4559-9F76-2C5A1AC27E7E}.Debug|Win32.Build.0 = Debug|Win32
 		{A74D2D16-C657-4559-9F76-2C5A1AC27E7E}.Release|Win32.ActiveCfg = Release|Win32
 		{A74D2D16-C657-4559-9F76-2C5A1AC27E7E}.Release|Win32.Build.0 = Release|Win32
+		{DE07269D-CAD0-4293-9F73-C481A5980C71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE07269D-CAD0-4293-9F73-C481A5980C71}.Debug|Win32.Build.0 = Debug|Win32
+		{DE07269D-CAD0-4293-9F73-C481A5980C71}.Release|Win32.ActiveCfg = Release|Win32
+		{DE07269D-CAD0-4293-9F73-C481A5980C71}.Release|Win32.Build.0 = Release|Win32
+		{CD581A75-7C5F-4500-90A8-BA857F6BBC4F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD581A75-7C5F-4500-90A8-BA857F6BBC4F}.Debug|Win32.Build.0 = Debug|Win32
+		{CD581A75-7C5F-4500-90A8-BA857F6BBC4F}.Release|Win32.ActiveCfg = Release|Win32
+		{CD581A75-7C5F-4500-90A8-BA857F6BBC4F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

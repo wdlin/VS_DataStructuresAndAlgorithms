@@ -38,10 +38,31 @@ void main()
 	preOrder(root);
 	cout << "------" << endl;
 	inOrder(root);
+	cout << "------" << endl;
+	root = remove(root, 4);
+	root = remove(root, 5);
+	root = remove(root, 3);
+	inOrder(root);
 
-	BSTNode* res1 = search(root,3);
-	cout << res1 << endl;
-	BSTNode* res2 = search_nonrecursion(root,3);
-	cout << res2 << endl;
+	BSTNode* res = search(root,6);
+	cout << res << endl;
+	if (res!=NULL)
+		cout << res->key << endl;
+
+	res = search_nonrecursion(root, 3);
+	cout << res << endl;
+	if (res != NULL)
+		cout << res->key << endl;
+
+	res = findMax(root);
+	cout << res << endl;
+	if (res != NULL)
+		cout << res->key << endl;
+
+	res = findMin(root);
+	cout << res << endl;
+	if (res != NULL)
+		cout << res->key << endl;
+
 	system("pause");
 }
