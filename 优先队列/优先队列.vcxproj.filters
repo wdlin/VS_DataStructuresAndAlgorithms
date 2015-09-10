@@ -18,6 +18,18 @@
     <ClInclude Include="BinaryHeap.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftistHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinomialHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FibonacciHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

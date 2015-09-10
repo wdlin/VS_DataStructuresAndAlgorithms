@@ -79,6 +79,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinaryHeap.h" />
+    <ClInclude Include="BinomialHeap.h" />
+    <ClInclude Include="DHeap.h" />
+    <ClInclude Include="FibonacciHeap.h" />
+    <ClInclude Include="LeftistHeap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

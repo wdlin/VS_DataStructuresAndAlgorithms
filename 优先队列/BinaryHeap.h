@@ -2,9 +2,22 @@
 #define _BINARY_HEAP_H_
 
 #include <vector>
-#include <exception>
+#include <stdexcept>
 #include <iostream>
 #include <cmath>
+/*
+二叉堆 最常用的优先队列
+从1开始计数。
+对于i：左儿子：2i ，右儿子：2i+1
+对于i：父节点为(int)(i/2)
+insert：O(logn)
+deleteMin：O(logn)
+buildHeap：平均时间是O(n)
+decreaseKey：减少元素的值，然后上滤调整堆
+increaseKey：增加元素的值，然后下滤调整堆
+remove：删除非最顶元素，remove需要减少元素的值至无穷小（需要类型的支持，例如定义一个最大值），上滤然后调用deleteMin。
+merge：合并两个堆的复杂度是O(nlogn)
+*/
 template<class Comparable>
 class BinaryHeap
 {
@@ -12,14 +25,14 @@ public:
 	explicit BinaryHeap(int capacity = 100);
 	explicit BinaryHeap(const std::vector<Comparable>& items);
 
-	bool isEmpty() const;
-	int size() const;
-	Comparable getMin() const;
-	void deleteMin();
-	void insert(const Comparable & item);
-	void makeEmpty();
-	void slim();
-	void print();
+	bool isEmpty() const;//是否为空
+	int size() const;//堆元素个数
+	Comparable getMin() const;//获取最小值
+	void deleteMin();//删除最小值
+	void insert(const Comparable & item);//插入元素
+	void makeEmpty();//清空所有元素
+	void slim();//减少数组大小
+	void print();//打印
 private:
 	int currentSize;//堆元素个数
 	std::vector<Comparable> array;//用于存放堆元素，第一个位置不用
@@ -123,10 +136,10 @@ void BinaryHeap<Comparable>::percolateDown(int hole)
 		if (array[child] < temp)//如果比儿子大，上移儿子节点
 		{
 			array[hole] = array[child];
-			hole = child;
+			hole = child;//新的放置位置，继续测试新的位置是否满足
 		}		
 		else
-			break;
+			break;//不比儿子节点大，满足条件，终止循环
 	}
 	array[hole] = temp;
 }
