@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "散列", "散列\散列.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "并查集", "并查集\并查集.vcxproj", "{E6D79A22-D044-4194-A183-82EBC86BDFF3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "红黑树", "红黑树\红黑树.vcxproj", "{58ED033D-D42B-4FFB-A8C9-A02FE053E060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -69,6 +71,10 @@ Global
 		{E6D79A22-D044-4194-A183-82EBC86BDFF3}.Debug|Win32.Build.0 = Debug|Win32
 		{E6D79A22-D044-4194-A183-82EBC86BDFF3}.Release|Win32.ActiveCfg = Release|Win32
 		{E6D79A22-D044-4194-A183-82EBC86BDFF3}.Release|Win32.Build.0 = Release|Win32
+		{58ED033D-D42B-4FFB-A8C9-A02FE053E060}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58ED033D-D42B-4FFB-A8C9-A02FE053E060}.Debug|Win32.Build.0 = Debug|Win32
+		{58ED033D-D42B-4FFB-A8C9-A02FE053E060}.Release|Win32.ActiveCfg = Release|Win32
+		{58ED033D-D42B-4FFB-A8C9-A02FE053E060}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
