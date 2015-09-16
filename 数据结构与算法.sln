@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AVL树", "AVL树\AVL树.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "散列", "散列\散列.vcxproj", "{08D857F4-85EF-4579-9F30-13FB8E73B82E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "红黑树", "红黑树\红黑树.vcxproj", "{BE158CF7-8003-402A-B2B8-ACF0453FFE32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -63,6 +65,10 @@ Global
 		{08D857F4-85EF-4579-9F30-13FB8E73B82E}.Debug|Win32.Build.0 = Debug|Win32
 		{08D857F4-85EF-4579-9F30-13FB8E73B82E}.Release|Win32.ActiveCfg = Release|Win32
 		{08D857F4-85EF-4579-9F30-13FB8E73B82E}.Release|Win32.Build.0 = Release|Win32
+		{BE158CF7-8003-402A-B2B8-ACF0453FFE32}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE158CF7-8003-402A-B2B8-ACF0453FFE32}.Debug|Win32.Build.0 = Debug|Win32
+		{BE158CF7-8003-402A-B2B8-ACF0453FFE32}.Release|Win32.ActiveCfg = Release|Win32
+		{BE158CF7-8003-402A-B2B8-ACF0453FFE32}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
