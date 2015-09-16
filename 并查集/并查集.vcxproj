@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BE158CF7-8003-402A-B2B8-ACF0453FFE32}</ProjectGuid>
+    <ProjectGuid>{E6D79A22-D044-4194-A183-82EBC86BDFF3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>红黑树</RootNamespace>
+    <RootNamespace>并查集</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -81,7 +81,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RedBlackTree.h" />
+    <ClInclude Include="DisjointSet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
