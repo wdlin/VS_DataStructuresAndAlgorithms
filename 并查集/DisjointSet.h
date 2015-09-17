@@ -5,19 +5,23 @@
 名字，Disjoint sets和Union-find set。
 
 为了方便把实现和声明放在了一个文件中。
+
+在算法导论中，用的是链表而不是数组。
 */
 //#include <stdexcept>
 #include <cassert>
+#include <iostream>
 class DisjointSet
 {
 public:
-	explicit DisjointSet(int num);//
-	~DisjointSet();//
-	int find(int x);//
-	void unionSets(int root1, int root2);//
+	explicit DisjointSet(int num);//构造函数
+	~DisjointSet();//析构函数
+	int find(int x);//查找集合
+	void unionSets(int root1, int root2);//合并集合
+	void print();
 private:
-	int *array;//
-	int number;//
+	int *array;//存放集合的数组
+	int number;//元素的个数
 };
 
 DisjointSet::DisjointSet(int num) :number(num)
@@ -101,6 +105,14 @@ void DisjointSet::unionSets(int root1,int root2)
 			array[root1]--;
 		array[root2] = root1;//root1成为新的根
 	}
+}
+
+void DisjointSet::print()
+{
+	using namespace std;
+	for (int i = 0; i < number; i++)
+		cout << array[i] << ",";
+	cout << endl;
 }
 
 #endif

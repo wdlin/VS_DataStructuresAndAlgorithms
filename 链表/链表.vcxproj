@@ -11,10 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D846D341-B62B-417D-B50E-5ADB6430D394}</ProjectGuid>
+    <ProjectGuid>{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>LinedList</RootNamespace>
-    <ProjectName>链表</ProjectName>
+    <RootNamespace>链表</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
