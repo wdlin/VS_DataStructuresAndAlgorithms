@@ -25,6 +25,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "红黑树", "红黑树\红�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表", "链表\链表.vcxproj", "{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "拓扑排序", "拓扑排序\拓扑排序.vcxproj", "{0626F913-D2D0-41A4-9FA3-96A79E68902C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符串匹配", "字符串匹配\字符串匹配.vcxproj", "{FE48962A-B487-42EE-A0C7-BA4556A4620E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -75,6 +79,14 @@ Global
 		{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}.Debug|Win32.Build.0 = Debug|Win32
 		{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}.Release|Win32.ActiveCfg = Release|Win32
 		{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}.Release|Win32.Build.0 = Release|Win32
+		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Debug|Win32.Build.0 = Debug|Win32
+		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Release|Win32.ActiveCfg = Release|Win32
+		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Release|Win32.Build.0 = Release|Win32
+		{FE48962A-B487-42EE-A0C7-BA4556A4620E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FE48962A-B487-42EE-A0C7-BA4556A4620E}.Debug|Win32.Build.0 = Debug|Win32
+		{FE48962A-B487-42EE-A0C7-BA4556A4620E}.Release|Win32.ActiveCfg = Release|Win32
+		{FE48962A-B487-42EE-A0C7-BA4556A4620E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
