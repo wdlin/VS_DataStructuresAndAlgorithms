@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符串匹配", "字符�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "静态查找", "静态查找\静态查找.vcxproj", "{B93BC11A-7040-40E3-B9D6-258755E25F35}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "哈希树", "哈希树\哈希树.vcxproj", "{282B2A32-BBA4-4C00-8271-44D505B2AEC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -93,6 +95,10 @@ Global
 		{B93BC11A-7040-40E3-B9D6-258755E25F35}.Debug|Win32.Build.0 = Debug|Win32
 		{B93BC11A-7040-40E3-B9D6-258755E25F35}.Release|Win32.ActiveCfg = Release|Win32
 		{B93BC11A-7040-40E3-B9D6-258755E25F35}.Release|Win32.Build.0 = Release|Win32
+		{282B2A32-BBA4-4C00-8271-44D505B2AEC7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{282B2A32-BBA4-4C00-8271-44D505B2AEC7}.Debug|Win32.Build.0 = Debug|Win32
+		{282B2A32-BBA4-4C00-8271-44D505B2AEC7}.Release|Win32.ActiveCfg = Release|Win32
+		{282B2A32-BBA4-4C00-8271-44D505B2AEC7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
