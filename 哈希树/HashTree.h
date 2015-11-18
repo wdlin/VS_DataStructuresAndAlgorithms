@@ -25,33 +25,33 @@
 据量减少到原来的数量，但是哈希树的总结点树不会减少。这样做的目的是为了避免结构的调整带来的额外消耗。
 
 
-
+key是不可以重复的，但是这个实现是可以少量重复，最多可以重复数为树的高度即primeNum。
 */
 
-//template<class keyType,class valueType>
-#define KeyType int
-#define ValueType int
+
+//#define KeyType int
+//#define ValueType int
 
 
-
+template<class KeyType,class ValueType>
 class HashTree
 {
 public:
-	HashTree();
-	HashTree(KeyType key,ValueType value);
-	HashTree(int childSize, int primes[], int primeNum);//childSize必须大于prime[primeNum - 1]的值
-	~HashTree();
-	void insertNode(const KeyType& key, const ValueType& value);
-	bool findNode(const KeyType& key, const ValueType& value);
-	bool removeNode(const KeyType& key, const ValueType& value);
+	HashTree();//默认构造函数
+	HashTree(KeyType key,ValueType value);//输入第一个值作为根
+	HashTree(int childSize, int primes[], int primeNum);//输入子树的大小，一个质数数组，数组大小，childSize必须大于prime[primeNum - 1]的值
+	~HashTree();//析构函数
+	void insertNode(const KeyType& key, const ValueType& value);//插入一个节点
+	bool findNode(const KeyType& key, const ValueType& value);//查找节点
+	bool removeNode(const KeyType& key, const ValueType& value);//移除一个节点
 
 private:
-	struct HashNode
+	typedef struct HashNode//哈希树的节点类
 	{
-		KeyType key;
-		ValueType value;
-		bool occupied;
-		HashNode** children;
+		KeyType key;//键
+		ValueType value;//值
+		bool occupied;//是否有效
+		HashNode** children;//子节点指针
 		HashNode(HashTree* tree) :occupied(false)
 		{
 			children = new HashNode*[tree->childSize];
@@ -66,21 +66,22 @@ private:
 		}
 		~HashNode(){}
 
-	};
-	int childSize;
-	int *primes;
-	int primeNum;
-	HashNode* root;
+	}HashNode;
+	int childSize;//子树个数
+	int *primes;//质数数组
+	int primeNum;//质数数组的大小
+	HashNode* root;//根
 
-	void insert(HashNode* node, int level, const KeyType& key, const ValueType& value);
-	HashNode* find(HashNode* node, int level, const KeyType& key, const ValueType& value);
-	void release(HashNode* node);
+	void insert(HashNode* node, int level, const KeyType& key, const ValueType& value);//插入节点的实际函数
+	HashNode* find(HashNode* node, int level, const KeyType& key, const ValueType& value);//查找节点的实际函数
+	void release(HashNode* node);//释放内存的函数
 	//bool remove(HashNode* node, int level, const KeyType& key, const ValueType& value);
 
 };
 
-
-HashTree::HashTree() :childSize(32), primeNum(10)
+//默认构造函数
+template<class KeyType, class ValueType>
+HashTree<KeyType,ValueType>::HashTree() :childSize(32), primeNum(10)
 {
 	primes = new int[primeNum];
 	primes[0] = 2;
@@ -95,8 +96,9 @@ HashTree::HashTree() :childSize(32), primeNum(10)
 	primes[9] = 29;
 	root = new HashNode(this);
 }
-
-HashTree::HashTree(KeyType key, ValueType value) :childSize(32), primeNum(10)
+//输入第一个值作为根
+template<class KeyType, class ValueType>
+HashTree<KeyType, ValueType>::HashTree(KeyType key, ValueType value) :childSize(32), primeNum(10)
 {
 	primes = new int[primeNum];
 	primes[0] = 2;
@@ -110,9 +112,11 @@ HashTree::HashTree(KeyType key, ValueType value) :childSize(32), primeNum(10)
 	primes[8] = 23;
 	primes[9] = 29;
 	root = new HashNode(this, key, value);
+	root->occupied = true;
 }
-
-HashTree::HashTree(int childSize, int primes[], int primeNum)//childSize必须大于prime[primeNum - 1]的值
+//输入子树的大小，一个质数数组，数组大小，childSize必须大于prime[primeNum - 1]的值
+template<class KeyType, class ValueType>
+HashTree<KeyType, ValueType>::HashTree(int childSize, int primes[], int primeNum)
 {
 	this->childSize = childSize;
 	this->primeNum = primeNum;
@@ -120,21 +124,28 @@ HashTree::HashTree(int childSize, int primes[], int primeNum)//childSize必须大于
 	for (int i = 0; i < primeNum; i++)
 		this->primes[i] = primes[i];
 }
-
-HashTree::~HashTree()
+//析构函数
+template<class KeyType, class ValueType>
+HashTree<KeyType, ValueType>::~HashTree()
 {
 	release(root);
 	delete primes;
 }
-void HashTree::insertNode(const KeyType& key, const ValueType& value)
+//插入一个节点
+template<class KeyType, class ValueType>
+void HashTree<KeyType, ValueType>::insertNode(const KeyType& key, const ValueType& value)
 {
 	return insert(root, 0, key, value);
 }
-bool HashTree::findNode(const KeyType& key, const ValueType& value)
+//查找节点
+template<class KeyType, class ValueType>
+bool HashTree<KeyType, ValueType>::findNode(const KeyType& key, const ValueType& value)
 {
 	return find(root, 0, key, value) != nullptr;
 }
-bool HashTree::removeNode(const KeyType& key, const ValueType& value)
+//移除一个节点
+template<class KeyType, class ValueType>
+bool HashTree<KeyType, ValueType>::removeNode(const KeyType& key, const ValueType& value)
 {
 	HashNode* node = find(root, 0, key, value);
 	if (node == nullptr)
@@ -146,8 +157,9 @@ bool HashTree::removeNode(const KeyType& key, const ValueType& value)
 	}
 }
 
-
-void HashTree::insert(HashNode* node, int level, const KeyType& key, const ValueType& value)
+//插入节点的实际函数
+template<class KeyType, class ValueType>
+void HashTree<KeyType, ValueType>::insert(HashNode* node, int level, const KeyType& key, const ValueType& value)
 {
 	if (node->occupied == false)
 	{
@@ -167,7 +179,9 @@ void HashTree::insert(HashNode* node, int level, const KeyType& key, const Value
 	insert(node->children[index], level, key, value);
 
 }
-HashTree::HashNode* HashTree::find(HashNode* node, int level, const KeyType& key, const ValueType& value)
+//查找节点的实际函数
+template<class KeyType, class ValueType>
+typename HashTree<KeyType, ValueType>::HashNode* HashTree<KeyType, ValueType>::find(HashNode* node, int level, const KeyType& key, const ValueType& value)
 {
 	if (node->occupied == true && node->key == key&&node->value == value)
 		return node;
@@ -178,7 +192,9 @@ HashTree::HashNode* HashTree::find(HashNode* node, int level, const KeyType& key
 	return find(node->children[index], level, key, value);
 }
 
-void HashTree::release(HashNode* node)
+//释放内存的函数
+template<class KeyType, class ValueType>
+void HashTree<KeyType, ValueType>::release(HashNode* node)
 {
 	for (int i = 0; i < primeNum; i++)
 	{
