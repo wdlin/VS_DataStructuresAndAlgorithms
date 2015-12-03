@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "哈希树", "哈希树\哈�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trie树", "Trie树\Trie树.vcxproj", "{93BE3A8F-2746-4D57-B132-0115916C2D5F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "图的遍历", "图的遍历\图的遍历.vcxproj", "{05AC7859-7C0E-49BC-A828-8D3D67996F66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -105,6 +107,10 @@ Global
 		{93BE3A8F-2746-4D57-B132-0115916C2D5F}.Debug|Win32.Build.0 = Debug|Win32
 		{93BE3A8F-2746-4D57-B132-0115916C2D5F}.Release|Win32.ActiveCfg = Release|Win32
 		{93BE3A8F-2746-4D57-B132-0115916C2D5F}.Release|Win32.Build.0 = Release|Win32
+		{05AC7859-7C0E-49BC-A828-8D3D67996F66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{05AC7859-7C0E-49BC-A828-8D3D67996F66}.Debug|Win32.Build.0 = Debug|Win32
+		{05AC7859-7C0E-49BC-A828-8D3D67996F66}.Release|Win32.ActiveCfg = Release|Win32
+		{05AC7859-7C0E-49BC-A828-8D3D67996F66}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

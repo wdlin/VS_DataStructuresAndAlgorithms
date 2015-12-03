@@ -16,7 +16,7 @@ Trie树的基本性质可以归纳为：
 
 
 #define ChildrenSize 26
-
+//将字符转换成下标的映射函数
 int char2index(char ch)
 {
 	return ch - 'a';
@@ -25,25 +25,25 @@ int char2index(char ch)
 class Trie
 {
 public:
-	Trie();
-	~Trie();
-	void insert(char* word);
-	int search(char* word);
+	Trie();//构造函数
+	~Trie();//析构函数
+	void insert(char* word);//插入节点
+	int search(char* word);//查询节点
 
 private:
-	struct TrieNode{
-		int count;
-		TrieNode** children;
-		bool exist;
+	struct TrieNode{//Trie树的内部节点类
+		int count;//字符串计数
+		TrieNode** children;//子树
+		bool exist;//该节点是否是存在的完整字符串节点
 		TrieNode():count(0),exist(false){
 			children = new TrieNode*[ChildrenSize];
 			for (int i = 0; i < ChildrenSize; i++)
 				children[i] = nullptr;
 		}
 	};
-	TrieNode* root;//
-	int childrenSize;//
-	void release(TrieNode* node);//
+	TrieNode* root;//根
+	int childrenSize;//子树的大小
+	void release(TrieNode* node);//释放内存
 
 };
 
