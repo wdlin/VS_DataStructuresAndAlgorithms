@@ -25,8 +25,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "红黑树", "红黑树\红�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表", "链表\链表.vcxproj", "{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "拓扑排序", "拓扑排序\拓扑排序.vcxproj", "{0626F913-D2D0-41A4-9FA3-96A79E68902C}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符串匹配", "字符串匹配\字符串匹配.vcxproj", "{FE48962A-B487-42EE-A0C7-BA4556A4620E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "静态查找", "静态查找\静态查找.vcxproj", "{B93BC11A-7040-40E3-B9D6-258755E25F35}"
@@ -35,7 +33,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "哈希树", "哈希树\哈�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trie树", "Trie树\Trie树.vcxproj", "{93BE3A8F-2746-4D57-B132-0115916C2D5F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "图的遍历", "图的遍历\图的遍历.vcxproj", "{05AC7859-7C0E-49BC-A828-8D3D67996F66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "图的基础", "图的遍历\图的遍历.vcxproj", "{05AC7859-7C0E-49BC-A828-8D3D67996F66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +85,6 @@ Global
 		{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}.Debug|Win32.Build.0 = Debug|Win32
 		{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}.Release|Win32.ActiveCfg = Release|Win32
 		{DB4829C5-D69B-4A86-8BC3-5F0852A1CED9}.Release|Win32.Build.0 = Release|Win32
-		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Debug|Win32.ActiveCfg = Debug|Win32
-		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Debug|Win32.Build.0 = Debug|Win32
-		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Release|Win32.ActiveCfg = Release|Win32
-		{0626F913-D2D0-41A4-9FA3-96A79E68902C}.Release|Win32.Build.0 = Release|Win32
 		{FE48962A-B487-42EE-A0C7-BA4556A4620E}.Debug|Win32.ActiveCfg = Debug|Win32
 		{FE48962A-B487-42EE-A0C7-BA4556A4620E}.Debug|Win32.Build.0 = Debug|Win32
 		{FE48962A-B487-42EE-A0C7-BA4556A4620E}.Release|Win32.ActiveCfg = Release|Win32

@@ -23,5 +23,8 @@
     <ClInclude Include="AdjacencyList.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="TopologySort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
